@@ -1,0 +1,134 @@
+
+.container-fluid{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+
+    .brand{
+        font-family: 'Poppins', sans-serif;
+        text-transform: lowercase;
+        font-weight: 900;
+        font-size: 24px;
+    }
+    a{
+        text-decoration: none;
+        color: $nuetral-white;
+    }
+}
+
+.toggle-container{
+    display: none;
+
+    button{
+        background: none;
+        padding: 0;
+        border: none;
+    }
+    .fas{
+        font-size: 30px;
+        color: $nuetral-white;
+    }
+
+    @media only screen and (max-width:430px){
+        display: inline-block;
+    }
+}
+
+.nav-collapse{
+    display: inline;
+    right: 0;
+    transition: .5s ease all;
+
+    @media only screen and (max-width:430px){
+        display: none;
+        position: absolute;
+        top: 115px;
+        left: 30px;
+        right: 30px;
+        padding: 30px 0;
+        background-color: $nuetral-white;
+
+        a{
+            color: $neutral-black;
+        }
+    }
+    .block{
+        width: 0;
+        height: 0;
+        position: absolute;
+        display: none;
+        right: 0;
+        top: -30px;
+        border-top-width: 50px;
+        border-top-style: solid;
+        border-top-color: transparent;
+        border-right-width: 50px;
+        border-right-style: solid;
+        border-right-color: $nuetral-white;
+
+        @media only screen and (max-width:430px){
+            display: block;
+        }
+    }
+    ul{
+        margin: 0;
+        padding: 0;
+        display: inline;
+        list-style-type: none;
+    }
+
+    li{
+        display: inline;
+        padding: 15px 30px;
+        border-radius: 50px;
+        transition: .5s all ease;
+
+        &:hover{
+            background-color: $soft-red;
+        }
+        @media only screen and (max-width:430px){
+            width: fit-content;
+            display: block;
+            margin: 10px auto;
+            text-align: center;
+
+            &:hover{
+                background: none;
+            }
+
+            a{
+                font-weight: bold;
+                color: $purple-gray;
+            }
+        }
+    }
+
+    .contact{
+        font-family: 'Fraunces', serif;
+        background-color: $nuetral-white;
+        border-radius: 50px;
+        
+        @media only screen and (max-width:430px){
+            background-color: $primary-yellow;
+        }
+        a{
+            color: $neutral-black;
+            font-size: 16px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.arrow-down{
+    text-align: center;
+    padding-top: 40px;
+
+    @media only screen and (max-width:430px){
+        img{
+            height: 180px;
+        }
+    }
+}

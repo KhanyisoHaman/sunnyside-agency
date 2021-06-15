@@ -4,10 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Fraunces:wght@400;800&family=Poppins:wght@800&display=swap" rel="stylesheet"> 
   
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">  
+  <link rel="stylesheet" href="css/main.css">
   <title>Frontend Mentor | Sunnyside agency landing page</title>
-
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -15,12 +20,32 @@
   </style>
 </head>
 <body>
-  About
-  Services
-  Projects
-  Contact
+  <header>
+    <nav class="navbar">
+      <div class="container-fluid">
+        <a class="brand" href="#">Sunnyside</a>
+        
+        <div class="toggle-container">
+          <button id="toggleBtn"><i class="fas fa-bars"></i></button>
+        </div>
+        <div class="nav-collapse">
+          <div class="block"><a href="#"></a></div>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Projects</a></li>
+            <li class="contact"><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
 
-  We are creatives
+    </nav>
+
+    <h1>We are creatives</h1>
+
+    <div class="arrow-down"><a href="#"><img src="images/icon-arrow-down.svg" alt="click down"></a></div>
+  </header>
+  
 
   Transform your brand
 
@@ -61,8 +86,11 @@
   Contact
 
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by <a target="_blank" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a target="_blank" href="https://khanyisohaman.github.io/khanyisohaman/">Khanyiso Haman</a>.
   </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
