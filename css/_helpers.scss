@@ -132,3 +132,203 @@
         }
     }
 }
+
+.item-section{
+    width: 100%;
+    height: 600px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0;
+    
+    .block-text{
+        background-color: $nuetral-white;
+        padding: 150px 150px 150px 150px;
+
+        @media only screen and (max-width: 769px){
+            padding: 80px;
+        }
+    }
+
+    .block-img{
+        background-position: center;
+        background-size: cover;
+    }
+
+    h1{
+        width: 80%;
+        font-family: 'Fraunces', serif;
+        color: $darker-blue;
+        font-size: 40px;
+
+        @media only screen and (max-width: 769px){
+            width: 90%;
+        }
+    }
+
+    p{
+        font-weight: bold;
+        color: $gray-blue;
+    }
+
+    a{
+        text-transform: uppercase;
+        font-family: 'Fraunces', serif;
+        font-weight: bold;
+        font-size: 15px;
+        color: $darker-blue;
+        transition: .2s ease all;
+    }
+}
+
+.yellow {
+    text-decoration: #fad40085 solid 5px underline;
+
+    &:hover{
+        text-decoration: $primary-yellow solid 5px underline;
+    }
+}
+
+.pink{
+    text-decoration: #fe796786 solid 5px underline;
+
+    &:hover{
+        text-decoration: $soft-red solid 5px underline;
+    }
+}
+
+.egg .block-img{
+    background-color: $primary-yellow;
+    background-image: url(../images/desktop/image-egg.jpg);
+}
+
+.cup .block-img{
+    background-color: $soft-red;
+    background-image: url(../images/desktop/image-cup.jpg);
+}
+
+.twin-block{
+    padding: 25rem 0 0 0;
+    text-align: center;
+
+    @media only screen and (max-width: 769px){
+        padding: 24rem 0 0 0;
+    }
+
+    h1{
+        width: 100%;
+        font-size: 30px;
+        text-align: center;
+        text-transform: capitalize;
+    }
+
+    p{
+        width: 50%;
+        margin: 0 auto;
+
+        @media only screen and (max-width: 769px){
+            width: 80%;
+        }
+    }
+}
+
+.cherry{
+    background-image: url(../images/desktop/image-cherry.jpg);
+    h1, p{
+        color: $primary-text-col;
+    }
+}
+
+.naartjie{
+    background-image: url(../images/desktop/image-naartjie.jpg);
+    h1, p{
+        color: $secondary-text-col;
+    }
+}
+
+.testimonials{
+    height: 75vh;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 120px;
+
+    @media only screen and (max-width: 769px){
+        margin-top: 50px;
+        height: 95vh;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    h1{
+        font-family: 'Fraunces', serif;
+        grid-column: span 3;
+        text-align: center;
+        color: $purple-gray;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 20px;
+
+        @media only screen and (max-width: 769px){
+            grid-column: span 2;
+        }
+    }
+
+    .person{
+        text-align: center;
+    }
+
+    img{
+        width: 90px;
+        height: 90px;
+        border-radius: 100%;
+        margin: 20px auto;
+    }
+
+    p{
+        font-weight: bold;
+        color: $gray-blue;
+        padding: 0 95px 40px;
+    }
+
+    h3{
+        font-family: 'Fraunces', serif;
+        margin: 0 0 0 10px;
+    }
+    h5{
+        margin: 10px 0 0 0;
+        font-size: 15px;
+        color: $grayish-blue;
+    }
+}
+
+.grid-4{
+    height: 500px;
+    display: grid;
+    grid-gap: 0;
+    grid-template-columns: repeat(4, 1fr);
+
+    @media only screen and (max-width: 769px){
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    div{
+        background-position: center;
+        background-size: cover;
+    }
+
+    .milk{
+        background-image: url(../images/desktop/image-gallery-milkbottles.jpg);
+    }
+    .plate{
+        background-image: url(../images/desktop/image-gallery-orange.jpg);
+    }
+    .cone{
+        background-image: url(../images/desktop/image-gallery-cone.jpg);
+    }
+    .cubes{
+        background-image: url(../images/desktop/image-gallery-sugarcubes.jpg);
+    }
+}
+
+.attribution{
+    background-color: $footer-text-col;
+}

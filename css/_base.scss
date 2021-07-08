@@ -23,3 +23,65 @@ header{
         font-size: 50px;
     }
 }
+
+footer{
+    height: 300px;
+    background-color: $footer-text-col;
+    padding-top: 50px;
+
+    h1{
+        margin: 0;
+        font-weight: 900;
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        color: $primary-text-col;
+        text-transform: lowercase;
+    }
+
+    .footer-nav{
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    ul{
+        list-style: none;
+        display: inline;
+        width: 100%;
+        padding: 0;
+
+        li{
+            display: inline;
+            padding: 10px 30px 10px;
+        }
+
+        a{
+            text-decoration: none;
+            font-weight: bold;
+            color: $primary-text-col;
+            transition: .5s ease-in-out all;
+
+            &:hover{
+                color: $nuetral-white;
+            }
+        }
+    }
+
+    .social-icons{
+        text-align: center;
+        padding-top: 50px;
+
+        span{
+            padding: 10px 20px;
+        }
+
+        .fab{
+            font-size: 28px;
+            color: $primary-text-col;
+            transition: .5s ease-in-out all;
+
+            &:hover{
+                color: $nuetral-white;
+            }
+        }
+    }
+}
